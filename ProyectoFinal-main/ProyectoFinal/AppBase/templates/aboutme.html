@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenidoQCambia %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aboutme.css' %}">
+
+    <h1>Como va? Mi nombre es Agustín C. Gagliardi</h1>
+
+    <body>
+    <h5>Les voy a contar sobre mi!</h5>
+    <p>Nacido en la Ciudad de las Diagonales, más conocida como la Ciudad de la Plata en el año 2000</p>
+	<p>Enfermo por los autos y fan de los jueguitos, que dieron vida a este blog!</p>
+	<p>Actualmente, chofer de ambulancia, en un futuro? Ojalá programador.</p>
+	<p>Mis ramas ya comenzadas fueron de Ciberseguridad y programación en Python, ambas estudiadas en CoderHouse.</p>
+    <p>Para conocer proyectos anteriores y futuros, les dejo el link hacia mi repositorio en GitHub, saludos!!</p>
+
+    <div style="margin-top: 20px;"></div>
+    <a href="https://github.com/ElDeka20" target="_blank"><button>Visitar Github</button></a>
+    </div>
+
+    <div style="margin-top: 20px;">
+        {% url 'Inicio' as url %}
+        <button class="center" type="button" onclick="window.location.href='{{ url }}'">Volver a la Home</button>
+    </div>
+{% endblock contenidoQCambia %}
